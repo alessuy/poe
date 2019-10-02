@@ -29,6 +29,7 @@ graficaspoe(){
         DEF:bl-p12=$bd/sw-bl-p12a.rrd:pw:AVERAGE \
 	DEF:bl-p13=$bd/sw-bl-p13a.rrd:pw:AVERAGE \
         DEF:bl-p14=$bd/sw-bl-p14a.rrd:pw:AVERAGE \
+	DEF:bb-pp=$bd/sw-bb-ppa.rrd:pw:AVERAGE \
 	DEF:bb-pb=$bd/sw-bb-pba.rrd:pw:AVERAGE \
 	DEF:bb-p1=$bd/sw-bb-p1a.rrd:pw:AVERAGE \
         DEF:bb-t01=$bd/sw-bb-t01.rrd:pw:AVERAGE \
@@ -80,6 +81,9 @@ graficaspoe(){
         GPRINT:bl-p14:LAST:"%5.0lf " \
         GPRINT:bl-p14:MAX:"%5.0lf \n" \
 	COMMENT:"---------------------------------------------------------------------------------------\n" \
+	STACK:bb-pp#FFFF00:"SW-BB-PPA " \
+        GPRINT:bb-pb:LAST:"%5.0lf" \
+        GPRINT:bb-pb:MAX:"%5.0lf \n" \
 	STACK:bb-pb#FFFF00:"SW-BB-PBA " \
         GPRINT:bb-pb:LAST:"%5.0lf" \
         GPRINT:bb-pb:MAX:"%5.0lf \n" \
