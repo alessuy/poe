@@ -53,7 +53,7 @@ graficaspoe(){
         DEF:hb-n5b=$bd/sw-hb-n5b.rrd:pw:AVERAGE \
 	DEF:hb-n5c=$bd/sw-hb-n5c.rrd:pw:AVERAGE \
 	DEF:cc-p8=$bd/sw-tel-cc-p8a.rrd:pw:AVERAGE \
-	COMMENT:"             ACTUAL    MAXIMO             ACTUAL    MAXIMO             ACTUAL    MAXIMO\n" \
+	COMMENT:"             ACTUAL    MAXIMO \n" \
 	COMMENT:"---------------------------------------------------------------------------------------\n" \
         AREA:bl-pb#CA6F1E:"SW-BL-PBA " \
         GPRINT:bl-pb:LAST:"%5.0lf" \
